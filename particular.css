@@ -1,0 +1,371 @@
+main{
+    /* position: relative; */
+    margin-top:8%;
+    margin-left:3%;
+    display:grid;
+    margin-bottom:3%;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    row-gap:100px;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat", sans-serif;    
+    color:#333333;
+    /* font-weight: 500; */
+    transition-duration: 0.3s;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:310px;
+    width:290px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+    font-family: sans-serif;
+    transition: transform 0.3s ease;
+    cursor:pointer;
+}
+.pic{
+    position:relative;
+    height:55%;
+    width:90%;
+    /* background-color: aqua; */
+    top:2%;
+    left:5%;
+    
+    /* margin-bottom:10px;
+    background-image: url(https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/32932916-f659-4926-8293-25df5848206a/jordan-stay-loyal-3-shoes-GNHN2X.png);
+    background-size: cover;
+    background-position: center; */
+    overflow:hidden;
+}
+.pic img{
+    position: relative;
+    left:-0.2%;
+    height:120%;
+    width:100%;
+    
+    clip-path: polygon(0 5%, 100% 5%, 100% 80%, 0% 80%)
+}
+.descr{
+    position: relative;
+    color:red;
+    top:8%;
+    left:5%;
+    width:90%;
+    background-color: white;;
+    font-weight:600;
+}
+.name{
+    position:relative;
+    background-color: white;
+    left:5%;
+    top:10%;
+    width:90%;
+    font-weight:600;
+
+    /* background-color: red; */
+}
+.price{
+    background-color: white;
+    position:relative;
+    left:5%;
+    top:14%;
+    width:fit-content;
+    font-weight:600;
+
+}
+.extra-info{
+    position: relative;
+    left:5%;
+    top:12%;
+    /* background-color: seagreen; */
+    width:90%;
+    opacity:0.5;
+
+}
+.card:hover{
+    transform:scale(1.05);
+}
+nav{
+    position: relative;
+    top:30px;
+    left:30px;
+    display:flex;
+    flex-wrap: wrap;
+}
+nav ul{
+    margin-left:337px;
+    margin-top:22px;
+    display:flex;
+    list-style-type: none;
+    gap:20px;
+}
+nav ul li{
+    font-size:20px;
+    font-weight:450;
+    cursor:pointer;
+}
+nav ul li:hover{
+    font-weight:600;
+    border-bottom: 2px solid #333333;
+}
+.logo a{
+    color:#333;
+    text-decoration:0;
+    font-size:40px;
+    font-weight: 900;
+    font-style: italic;
+}
+.search-bar{
+    margin-left:30px;
+    margin-top: 15px;
+    height:35px;
+    width:181px;
+    color:black;
+    border-radius:5px;
+    border:none;
+}
+nav{
+    input[type=search]{
+        transition-duration: 0.3s;
+        border: 2px solid #555;
+        padding-left:10px;
+        &:focus{
+            background-color: #5555;
+            transition-duration: 0.3s;
+            border:none;
+            outline:none;
+        }
+    }
+}
+#search{
+    background-color: transparent;
+    color:white;
+    cursor:pointer;
+    height:35px;
+    margin-top:15px;
+    width:40px;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    transition-duration: 0.3s;
+}
+#search:hover{
+    transition-duration: 0.3s;
+    background-color: #5555;
+    border-radius:5px;
+    color:white;
+}
+nav ul li a{
+    text-decoration: none;
+}
+#modeswitch{
+    cursor:pointer;
+    font-size:20px;
+    margin-top:18px;
+    margin-left:330px ;
+    background-color: transparent;
+    outline:none;
+    border:none;
+
+    
+  }
+  
+  .dark{
+    transition-duration: 0.3s;
+    background-color: #333;;
+    *{
+        color:#fff;
+    }
+    .logo a{
+        color:#fff;
+    }
+    .search-bar{
+        color:black;
+    }
+    nav ul li:hover{
+        border-bottom: 2px solid #fff;
+    }
+    nav{
+        input[type=search]{
+            &:focus{
+                background-color: white;
+            }
+        }
+    }
+    .descr{
+       
+        color:red;
+        
+    }
+    .name{
+      color:black;
+    }
+    .price{
+        color:black;
+    
+    }
+    .extra-info{
+        color:black;
+        opacity:0.5;
+    
+    }
+}
+.hamb{
+    display:none;
+}
+.hamburger{
+    display:none;
+}
+@media only screen and (max-width: 767px) {
+    /* CSS rules for phone-sized screens */
+    main{
+        margin-left:10%;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 10px;;
+        gap:none;
+        margin-top:15%;
+    }
+    
+    .card{
+        transform: scale(0.9);
+    }
+    .card:hover{
+        transform:scale(0.9);
+    }
+    .hamb{
+        cursor:pointer;
+        display:flex;
+        margin-top:3%;
+        margin-right:8%;
+        font-size:20px;
+        margin-left:-2%;
+    }
+    .gethamburger .hamburger{
+        
+            display:flex;
+    }
+    
+  }
+  footer{
+    background-color: black;;
+    color:white;
+    font-size:12px;
+    font-weight: 600;
+    padding-bottom:20px;
+}
+.footer{
+    background-color: black;
+    position: relative;
+    margin-top:12%;
+    display:flex;
+    gap:30px;
+    color:white;
+    font-size:12px;
+    font-weight: 600;
+}
+.foot-sec-1{
+    /* float:left; */
+    margin-left:10%;
+    margin-top:30px;
+    margin-bottom:30px;
+    flex-basis: auto;
+    
+}
+.foot-sec-1 ul li{
+    color:white;
+    cursor:pointer;
+}
+.foot-sec-1 ul li:HOVER{
+    transform: SCALE(1.05);
+}
+footer ul{
+    list-style-type: none;
+    line-height: 30PX;
+}
+footer p{
+    color:#333333;;
+    margin-left:10%;
+}
+.hamb{
+    display:none;
+}
+.hamburger{
+    display:none;
+}
+nav{
+    position: relative;
+    top:30px;
+    left:30px;
+    display:flex;
+    flex-wrap: wrap;
+}
+nav ul{
+    margin-left:337px;
+    margin-top:22px;
+    /* margin-right:0; */
+    display:flex;
+    list-style-type: none;
+    gap:20px;
+}
+nav ul li{
+    font-size:20px;
+    font-weight:450;
+    cursor:pointer;
+}
+nav ul li:hover{
+    font-weight:600;
+    border-bottom: 2px solid #333333;
+}
+.logo a{
+    color:#333;
+    text-decoration:0;
+    font-size:40px;
+    font-weight: 900;
+    font-style: italic;
+}
+.search-bar{
+    margin-left:30px;
+    margin-top: 15px;
+    height:35px;
+    width:181px;
+    color:black;
+    border-radius:5px;
+    border:none;
+}
+nav{
+    input[type=search]{
+        transition-duration: 0.3s;
+        border: 2px solid #555;
+        padding-left:10px;
+        &:focus{
+            background-color: #5555;
+            transition-duration: 0.3s;
+            border:none;
+            outline:none;
+        }
+    }
+}
+#search{
+    background-color: transparent;
+    color:white;
+    cursor:pointer;
+    height:35px;
+    margin-top:15px;
+    width:40px;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    transition-duration: 0.3s;
+}
+#search:hover{
+    transition-duration: 0.3s;
+    background-color: #5555;
+    border-radius:5px;
+    color:white;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sneakerHead</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="resp_main.css">
+<link rel="stylesheet" href="hamburger.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href = "index.html" target="_main">.sneakerHead</a>
+            </div>
+            <ul>
+                <li><a href="men.html" target="_men">Men</a></li>
+                <li><a href="women.html" target="_women">Women</a></li>
+                <li><a href="kids.html" target="_kids">Kids</a></li>
+            </ul>
+            <div class="right-nav">
+                <button id="modeswitch" onclick = "switchMode()">
+                    <i class="fa fa-adjust" id="switch-color"></i>
+                </button>
+                <input type="search" class="search-bar" placeholder="Search" id="searched_content">
+                <button class="search" id="search"> <i class = "fa fa-search"></i> </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="box1">
+            <div class="wrt">
+                <p class="name">sneakerHead</p>
+                <p class="descp">Your one Stop Destination for Premium Quality Sneakers</p>
+                <p class="descp2"> Dive into our curated collection of the latest trends and timeless classics, meticulously selected to satisfy every style palette. Explore our extensive range and step into a world where comfort meets culture.</p>
+            </div>
+            <img src="utils/out-0(1).png" alt="" class="main-img">
+        </div>
+        <div class="white-box">
+            <p>Stride with confidence in sneakerHead kicks</p>
+            <div class="slider-container">
+                <div class="slider">
+                  <img src="https://cms-cdn.thesolesupplier.co.uk/2022/07/aj1-shattered-backboard-factory-flaw-freaky-blink.png.webp" alt="Image 1">
+                  <img src="https://media.gq.com/photos/654933b13a3d7eec5b8a1f0d/master/pass/jordans.jpg" alt="Image 2">
+                  <img src="https://i.pinimg.com/originals/9c/f5/56/9cf5567e770cb28096371f909296ac0e.jpg" alt="Image 3">
+                  <img src="https://sneakerfortress.com/wp-content/uploads/2023/11/Nike-Air-Jordan-1-Black-Toe.jpg" alt="Image 4">
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+              </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="foot-sec-1">
+                <ul>
+                    <li>BECOME A MEMBER</li>
+                    <li>SEND US FEEDBACK</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="foot-sec-1">
+                <ul>
+                    <li>GET HELP</li>
+                    <li>ORDER STATUS</li>
+                    <li>DELIVERY</li>
+                    <li>RETURNS</li>
+                    <li>PAYMENT OPTIONS</li>
+                    <li>CONTACT US</li>
+                </ul>
+            </div>
+            <DIV class="foot-sec-1">
+                <UL>
+                    <LI>ABOUT sneakerHead</LI>
+                    <LI>NEWS</LI>
+                    <LI>CAREERS</LI>
+                    <LI>INVESTORS</LI>
+                    <LI>SUSTAINABILITY</LI>
+                </UL>
+            </DIV>
+        </div>
+        <p>© 2024 sneakerHead, Inc. All Rights Reserved</p>
+    </footer>
+    <script src="Sneaker.js"></script>
+    <script src="sneaks.controllers.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="imgslider.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>
